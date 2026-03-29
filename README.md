@@ -1,21 +1,90 @@
-# React + TypeScript + Vite
+# CONSTRUZILLA Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page profissional para plataforma de gestão de construção.
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+## 🚀 Deploy no Vercel (GRÁTIS)
 
-## Deploy Your Own
+### Opção 1: Deploy via GitHub (Recomendado)
 
-Deploy your own Vite project with Vercel.
+1. **Crie um repositório no GitHub:**
+   - Acesse https://github.com/new
+   - Nome: `construzilla-landing`
+   - Deixe como público
+   - Clique em "Create repository"
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/vite-react&template=vite-react)
+2. **Faça upload do código:**
+   ```bash
+   # No terminal, dentro desta pasta:
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/SEU-USUARIO/construzilla-landing.git
+   git push -u origin main
+   ```
 
-_Live Example: https://vite-react-example.vercel.app_
+3. **Deploy no Vercel:**
+   - Acesse https://vercel.com
+   - Clique em "Add New Project"
+   - Importe o repositório do GitHub
+   - Clique em "Deploy"
+   - Pronto! Seu site estará no ar em ~2 minutos
 
-### Deploying From Your Terminal
+### Opção 2: Deploy direto via CLI
 
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
+```bash
+# Instale o Vercel CLI
+npm i -g vercel
 
-```shell
-$ vercel
+# Faça login
+vercel login
+
+# Deploy (dentro desta pasta)
+vercel --prod
 ```
+
+## 🛠️ Desenvolvimento Local
+
+```bash
+# Instalar dependências
+npm install
+
+# Rodar em modo desenvolvimento
+npm run dev
+
+# Build de produção
+npm run build
+```
+
+## 📦 Estrutura
+
+```
+construzilla-landing/
+├── src/
+│   ├── App.jsx          # Componente principal
+│   ├── main.jsx         # Entry point
+│   └── index.css        # Estilos globais
+├── public/
+│   └── favicon.svg      # Ícone do site
+├── index.html           # HTML base
+├── package.json         # Dependências
+└── vite.config.js       # Configuração Vite
+```
+
+## 🎨 Cores da Marca
+
+- Background: `#0B1220`
+- Primary (Yellow): `#FACC15`
+- Cyan: `#22D3EE`
+- Magenta: `#F472B6`
+
+## 📱 Responsivo
+
+O site é totalmente responsivo e funciona perfeitamente em:
+- 📱 Mobile
+- 💻 Tablet
+- 🖥️ Desktop
+
+## 🔗 Links
+
+Todos os botões redirecionam para: https://canteiro-pro-next.lovable.app/
